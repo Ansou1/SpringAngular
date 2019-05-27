@@ -1,6 +1,7 @@
 package com.ansou.angularspring.todo;
 
 import java.util.Date;
+import java.util.Objects;
 
 public class Todo {
 
@@ -64,6 +65,19 @@ public class Todo {
 
     public void setDone(boolean done) {
         this.done = done;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Todo todo = (Todo) o;
+        return id == todo.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 
     @Override

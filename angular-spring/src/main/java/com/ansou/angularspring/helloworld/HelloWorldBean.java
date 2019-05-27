@@ -1,4 +1,4 @@
-package com.ansou.angularspring;
+package com.ansou.angularspring.helloworld;
 
 public class HelloWorldBean {
     private String message;

@@ -9,6 +9,12 @@
 
 <div class="container">
   Click here to get a custom message
-  <button (click)="getWelcomeMessage()"></button>
+  <button (click)="getWelcomeMessageWithPath()" class="btn btn-success">Get Welcome Message</button>
+  <br>
+</div>
+
+<div class="container" *ngIf="welcomeMessageFromService">
+  <h2>Your customize welcome message</h2>
+  {{welcomeMessageFromService}}
   <br>
 </div>

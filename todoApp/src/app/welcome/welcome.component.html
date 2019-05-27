@@ -1,0 +1,14 @@
+<h1>Welcome</h1>
+
+<div class="container">
+  Welcome {{username}} to your personal account
+  <br>
+  You can manage your todo list <a [routerLink]="['/todo']" routerLinkActive="router-link-active">here</a>
+  <br>
+</div>
+
+<div class="container">
+  Click here to get a custom message
+  <button (click)="getWelcomeMessage()"></button>
+  <br>
+</div>

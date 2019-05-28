@@ -21,6 +21,6 @@ public class HelloWorld {
 
     @GetMapping("/bean-hello/{name}")
     public HelloWorldBean helloWorldBean(@PathVariable String name) {
-        return new HelloWorldBean(String.format("Hello World, %s", name));
+        return new HelloWorldBean(String.format("Hello World, he is the best, let me introduce %s", name));
     }
 }

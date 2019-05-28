@@ -23,7 +23,7 @@ public class TodoHardCodedService {
     }
 
     public Todo deleteById(long id) {
-        Todo todo = findBy(id);
+        Todo todo = findById(id);
         if (todo == null)
             return null;
         if (todos.remove(todo))
@@ -31,11 +31,22 @@ public class TodoHardCodedService {
         return null;
     }
 
-    public Todo findBy(long id) {
+    public Todo findById(long id) {
         for (Todo todo : todos) {
             if (todo.getId() == id)
                 return todo;
         }
         return null;
+    }
+
+    public Todo save(Todo todo) {
+        if (todo.getId() == -1 || todo.getId() == 0) {
+            todo.setId(++idCounter);
+            todos.add(todo);
+        } else {
+            this.deleteById(todo.getId());
+            todos.add(todo);
+        }
+        return todo;
     }
 }

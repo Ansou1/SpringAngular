@@ -7,7 +7,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
-
+/*
 @CrossOrigin(origins = "http://localhost:4200")
 @Configuration
 @EnableWebSecurity
@@ -22,3 +22,4 @@ public class SpringSecurityConfigurationAuth extends WebSecurityConfigurerAdapte
                 .httpBasic();
     }
 }
+*/

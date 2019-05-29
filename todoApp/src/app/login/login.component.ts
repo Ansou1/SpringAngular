@@ -48,4 +48,21 @@ export class LoginComponent implements OnInit {
       }
     );
   }
+
+  handleJWTBasicAuthLogin() {
+    console.log(this.username);
+    console.log(this.password);
+
+    this.basicauth.executeJWTAuthenticationService(this.username, this.password).subscribe(
+      response => {
+        console.log(response);
+        this.router.navigate(['welcome', this.username]);
+        this.invalidlogin = false;
+      },
+      error => {
+        console.log(error);
+        this.invalidlogin = true;
+      }
+    );
+  }
 }

@@ -1,6 +1,5 @@
 package com.ansou.angularspring.todo;
 
-import javax.annotation.Generated;
 import javax.persistence.*;
 import java.util.Date;
 import java.util.Objects;
@@ -10,20 +9,15 @@ import java.util.Objects;
 public class Todo {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    @Column(name = "id")
+    @GeneratedValue
     private long id;
 
-    @Column(name = "username")
     private String username;
 
-    @Column(name = "description")
     private String description;
 
-    @Column(name = "target_date")
     private Date targetDate;
 
-    @Column(name = "done")
     private boolean done;
 
     public Todo() {

@@ -36,6 +36,9 @@ public class JwtInMemoryUserDetailsService implements UserDetailsService {
 }
 
 
+//"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaW1vbiIsImV4cCI6MTU1OTc2NDQzNSwiaWF0IjoxNTU5MTU5NjM1fQ.oRwAk9_JuHJKQwBP7MYvKkvkZqZhzkpLYITS4G8VRUj0tBp-Ouc0G-iRZPOWZhpizzdT8ACbIGQgPB7ASyrXTw"
+
+
         //"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbjI4bWludXRlcyIsImV4cCI6MTU1OTY4ODM5NywiaWF0IjoxNTU5MDgzNTk3fQ.OejmLdqA8Lytl5xfPp-0Bo06WGHhZe-cUfZgofjKtI3rUNaW3iEP4WArNUzMjLb1_uWxEO5_vyDG3qEMzNObTg"
 
         //"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbjI4bWludXRlcyIsImV4cCI6MTU1OTcyMzkwNiwiaWF0IjoxNTU5MTE5MTA2fQ.dQ4336fDTAUOOEXAlk_Bj_Gg9ZXYxYKwJyFjikfAC_3dgzpomMp9XWUiFZYZOPKzgP1-R4SHxgr-IpNBKU6uRg"
